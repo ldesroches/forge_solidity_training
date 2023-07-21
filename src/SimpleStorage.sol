@@ -30,3 +30,12 @@ contract SimpleStorage {
         nameToFavoriteNumber[_name] = _favoriteNumber;
     }
 }
+
+// forge commands
+// init: forge init
+// compile: forge compile
+// local blockchain: anvil
+// deploy: forge script script/DeploySimpleStorage.s.sol --rpc-url $RPC_URL --broadcast --private-key $PRIVATE_KEY
+// send: cast send 0x0e5858864397783DB124b96Bb2F5E7812931a878 "store(uint256)" 123 --rpc-url $GANACHE_RPC_URL --private-key $PRIVATE_KEY
+// call: cast call 0x0e5858864397783DB124b96Bb2F5E7812931a878 "retrieve()" --rpc-url $GANACHE_RPC_URL --private-key $PRIVATE_KEY
+// conversion: cast --to-base 0x000000000000000000000000000000000000000000000000000000000000007b dec
